@@ -26,7 +26,7 @@ int main() {
 
     char Operator;
     double a,b;
-    cout << "Enter an operator (+,-,*,/): " << endl;
+    menu: cout << "Enter an operator (+,-,*,/): " << endl;
     cin>>Operator;
 
     cout<<"Enter a number: "<<endl;
@@ -52,10 +52,10 @@ int main() {
             break;
 
         default:
-            cout<<"Nonvalid Operator";
+            cout<<"Nonvalid Operator"<<endl;
+            goto menu;
     }
 
 
     return 0;
 }
-
